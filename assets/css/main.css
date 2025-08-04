@@ -1987,14 +1987,23 @@ input, select, textarea {
 		.item header {
 			background: #fff;
 			margin: 0;
-			padding: 1em 0 1em 0;
-			font-size: 0.8em;
+			padding: 0.2em 0.2em 0.2em 0;
+			font-size: 0.45em;
 		}
 
 			.item header h3 {
-				font-size: 1.4em;
 				color: #333;
 				font-weight: bold;
+				text-align: left;
+				
+				display: flex; /* Use flexbox for layout */
+				justify-content: space-between; /* Push text to left and right */
+				align-items: center; /* Vertically align items */
+			}
+			
+			.item header h3 .right-text {
+				font-weight: bold; /* Optional: differentiate the right text */
+				color: #666; /* Optional: different color for contrast */
 			}
 
 /* Icons */
