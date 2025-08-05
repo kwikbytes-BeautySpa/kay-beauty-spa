@@ -1976,8 +1976,69 @@ input, select, textarea {
 		.button:active {
 			background-color: #7eaeac;
 		}
+/*New Item */
+.item {
+    box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
 
-/* Item */
+.item header {
+    background: #fff;
+    margin: 0;
+    padding: 0.2em 0.2em 0.2em 0;
+    font-size: 0.56em;
+}
+
+.table-like {
+    display: table;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    padding: 0em; /* Add padding for spacing */
+    vertical-align: middle; /* Align content vertically */
+	line-height: 1.7; /* Reduced line-height for tighter spacing */
+}
+
+.table-cell.title {
+    width: 60%; /* Make the first cell larger (adjust as needed) */
+}
+
+.table-cell.right-text {
+    color: #666; /* Different color for contrast */
+    text-align: right; /* Align pricing to the right */
+    width: 30%; /* Smaller width for the second cell */
+    white-space: nowrap; /* Prevent pricing text from wrapping */
+}
+
+
+/* Mobile adjustments for readability */
+@media screen and (max-width: 768px) {
+    .item header {
+        font-size: 0.9em; /* Slightly smaller font for mobile */
+    }
+
+    .table-cell {
+        padding: 0.1em; /* Reduce padding for smaller screens */
+    }
+
+    .table-cell.title {
+        width: 65%; /* Slightly adjust width for mobile if needed */
+    }
+
+    .table-cell.right-text {
+        width: 35%; /* Adjust for mobile */
+    }
+}
+/* Old Item 
 
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
@@ -1996,16 +2057,17 @@ input, select, textarea {
 				font-weight: bold;
 				text-align: left;
 				
-				display: flex; /* Use flexbox for layout */
-				justify-content: space-between; /* Push text to left and right */
-				align-items: center; /* Vertically align items */
+				display: flex; /* Use flexbox for layout 
+				justify-content: space-between; /* Push text to left and right 
+				align-items: center; /* Vertically align items 
 			}
 			
 			.item header h3 .right-text {
-				font-weight: bold; /* Optional: differentiate the right text */
-				color: #666; /* Optional: different color for contrast */
+				font-weight: bold; /* Optional: differentiate the right text 
+				color: #666; /* Optional: different color for contrast 
 			}
-			
+
+*/			
 
 
 /* Icons */
