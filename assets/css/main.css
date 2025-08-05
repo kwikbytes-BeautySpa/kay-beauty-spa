@@ -2020,6 +2020,7 @@ input, select, textarea {
 }
 
 
+
 /* Mobile adjustments for readability */
 @media screen and (max-width: 768px) {
     .item header {
@@ -2037,6 +2038,7 @@ input, select, textarea {
     .table-cell.right-text {
         width: 35%; /* Adjust for mobile */
     }
+	
 }
 /* Old Item 
 
