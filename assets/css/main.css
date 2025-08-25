@@ -2799,10 +2799,7 @@ input, select, textarea {
       transition: background-color 0.3s ease, transform 0.2s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    .review-button:hover {
-      background-color: #F97316; /* Hyndavi orange */
-      transform: translateY(-2px);
-    }
+    
     .review-icon {
       margin-right: 10px;
       font-size: 20px;
