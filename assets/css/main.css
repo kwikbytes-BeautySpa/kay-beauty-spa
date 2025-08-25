@@ -2717,3 +2717,108 @@ input, select, textarea {
 	margin-top: 0;
 	margin-bottom: 16px;
 }
+
+
+/* Map styling start */
+ .map-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio (450/800) */
+      height: 0;
+      overflow: hidden;
+      max-width: 800px; /* Max width for larger screens */
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .map-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 24px;
+      color: #1E3A8A;
+      text-align: center;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .map-prompt {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 16px;
+      color: #F97316;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .map-icon {
+      color: #1E3A8A;
+      font-size: 30px;
+      margin-right: 10px;
+    }
+    @media (max-width: 768px) {
+      .map-container {
+        padding-bottom: 75%; /* Taller aspect ratio for smaller screens */
+      }
+      .map-title { font-size: 20px; }
+      .map-prompt { font-size: 14px; }
+      .map-icon { font-size: 24px; }
+    }
+    @media (max-width: 480px) {
+      .map-container {
+        padding-bottom: 100%; /* Square for very small screens */
+      }
+      .map-title { font-size: 18px; }
+      .map-prompt { font-size: 12px; }
+      .map-icon { font-size: 20px; }
+    }
+/* Map styling End. */
+
+/* Google review button styling */
+.review-button-container {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 300px;
+    }
+    .review-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #1E3A8A; /* Hyndavi blue */
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .review-button:hover {
+      background-color: #F97316; /* Hyndavi orange */
+      transform: translateY(-2px);
+    }
+    .review-icon {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    .review-text {
+      font-size: 14px;
+      color: #1E3A8A;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin-top: 10px;
+    }
+    @media (max-width: 480px) {
+      .review-button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+      .review-icon { font-size: 18px; }
+      .review-text { font-size: 14px; }
+    }
+/* google review button style ends */
