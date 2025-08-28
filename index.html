@@ -538,10 +538,13 @@
 
 							<form method="post" id="contactForm" action="https://send-email.anil-prathipati15.workers.dev/sendEmail">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" />
+									<span id="name-span" style="color:red;font-weight: bold;font-size: 0.875rem;"></span></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" />
+									<span id="email-span" style="color:red;font-weight: bold;font-size: 0.875rem;" ></span></div>
 									<div class="col-12">
 										<textarea name="message" placeholder="Message"></textarea>
+										<span id="message-span" style="color:red;font-weight: bold;font-size: 0.875rem;" ></span>
 									</div>
 									<div class="col-12">
 										<input type="submit" value="Send Message" />
@@ -610,16 +613,48 @@
 			<script>
 				document.getElementById("contactForm").addEventListener("submit", async (e) => {
 				  e.preventDefault();
+				  // List all error span IDs
+					const spanIds = ["name-span", "email-span", "message-span"];
+
+					// Clear them dynamically
+					spanIds.forEach(id => {
+						document.getElementById(id).textContent = "";
+					});
 				  const form = e.target;
 				  const formData = new FormData(form);
 				  const data = Object.fromEntries(formData);
 
 				  try {
-					const res = await fetch(form.action, {
+					const result = await fetch(form.action, {
 					  method: "POST",
-					  headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin":"*" },
+					  headers: { "Content-Type": "application/json" },
 					  body: JSON.stringify(data)
 					});
+					console.log(result);
+					if (!result.ok) {
+					  // Extract errors
+					  const jsonErrors = await result.json();
+					  
+					  
+						console.log(jsonErrors.errors);
+					  /* Log or display errors
+					  jsonErrors.errors.forEach(error => {
+						console.log(`Field: ${error.field}, Error: ${error.message}`);
+					  });
+						*/
+					  // Example: Display errors in the UI
+					  jsonErrors.errors.forEach(error => {
+						const errorElement = document.getElementById(`${error.field}-span`);
+						document.getElementById(`${error.field}-span`)
+						console.log(errorElement);
+						if (errorElement) {
+						  errorElement.textContent = error.message;
+						}
+					  });
+						
+					  return errorMessages; // Return for further processing if needed
+					}
+									
 					alert("Thank you for your message. One of our Representative will be in contact with you shortly");
 					
 					form.reset();
