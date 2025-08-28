@@ -546,7 +546,7 @@
 									</div>
 								</div>
 							</form>
-
+							
 						</div>
 					</section>
 					
@@ -618,11 +618,11 @@
 					  headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin":"*" },
 					  body: JSON.stringify(data)
 					});
-
+					alert("Thank you for your message. One of our Representative will be in contact with you shortly");
 					
 					form.reset();
 				  } catch (err) {
-					document.getElementById("formStatus").innerText = "Failed to send. Try again.";
+					alert("Failed to send message. Sorry for inconvenience.");
 				  }
 				});
 			</script>
