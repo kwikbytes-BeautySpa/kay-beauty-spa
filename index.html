@@ -534,7 +534,7 @@
 								<p style="margin-bottom: 1px;color:black">We're here to help you book an appointment or answer any questions you may have.</p>
 							</section>
 
-							<form method="post" action="#">
+							<form method="post" id="contactForm" action="https://send-email.anil-prathipati15.workers.dev/sendEmail">
 								<div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
@@ -604,6 +604,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+				document.getElementById("contactForm").addEventListener("submit", async (e) => {
+				  e.preventDefault();
+				  const form = e.target;
+				  const formData = new FormData(form);
+				  const data = Object.fromEntries(formData);
+
+				  try {
+					const res = await fetch(form.action, {
+					  method: "POST",
+					  headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin":"*" },
+					  body: JSON.stringify(data)
+					});
+
+					
+					form.reset();
+				  } catch (err) {
+					document.getElementById("formStatus").innerText = "Failed to send. Try again.";
+				  }
+				});
+			</script>
 
 	</body>
 </html>
