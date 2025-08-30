@@ -90,6 +90,24 @@
 								  Book Now
 								</button>
 								
+								<a type="button" style="
+								background-color: #e413e4;
+								border: none;
+								color: white;
+								height: 40px;
+								text-transform: uppercase;
+								font-family: Comic Sans MS, Comic Sans, Chalkboard, ChalkboardSE-Regular, sans-serif;
+								letter-spacing: 1px;
+								line-height: 38px;
+								padding: 0 28px;
+								border-radius: 32px;
+								font-weight: 500;
+								font-size: 14px;
+								cursor: pointer;
+								display: inline-block; text-decoration:none" href="#products">
+								  Discover Products
+								</a>
+								
 								<!-- End Square Appointments Embed code -->
 							</footer>
 
@@ -450,19 +468,46 @@
 										</header>
 									</article>
 									
+								</div>						
+						</div>
+					</section>
+					
+				<!-- Products -->
+					<section id="products" class="two">
+						<div class="container">
+
+							<header>
+								<h2 class="fas fa-spa"> Products</h2>
+							</header>
+							<div class="row">
+								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<a  class="image fit"><img src="images/faza-5.jpeg" alt="" /></a>
 										<header>
 											<div class="table-like">
 												<div class="table-row">
-													<div class="table-cell title">Discover the power of Fazas body contouring garments, now available at Kay Beauty Spa.</div>
+													<div class="table-cell title">Discover the power of Faja body contouring garments, now available at Kay Beauty Spa.</div>
+													
+												</div>
+											</div>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a  class="image fit"><img src="images/oils.jpg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Kay Beauty Spa Massage oil helps relax your body, feet and muscles, soothe inflammation and reduce strain or pain.</div>
 													
 												</div>
 											</div>
 										</header>
 									</article>
 									
-								</div>						
+								</div>
+							</div>
 						</div>
 					</section>
 
@@ -550,6 +595,9 @@
 
 						</div>
 					</section>
+					
+					
+					
 
 				<!-- Contact -->
 					<section id="contact" class="four">
@@ -677,7 +725,7 @@
       <div class="modal-footer">
 		<span style="font-weight: bold;font-size:0.6em;color:red;"> Please review all terms to Accept.</span>
         <button type="button" id="declineBtn" class="btn btn-secondary" data-bs-dismiss="modal">Decline</button>
-        <button type="button" id="acceptBtn" class="btn btn-success" disabled>Accept</button>
+        <button type="button" id="acceptBtn" class="btn btn-success" >Accept</button>
       </div>
     </div>
   </div>
@@ -696,7 +744,7 @@
   const acceptBtn = document.getElementById("acceptBtn");
   //const confirmation = document.getElementById("confirmation");
 
-  // Enable Accept button only after scroll to bottom
+  /* Enable Accept button only after scroll to bottom
   termsContent.addEventListener("scroll", function() {
     if (termsContent.scrollTop + termsContent.clientHeight >= termsContent.scrollHeight) {
       acceptBtn.disabled = false;
@@ -714,6 +762,7 @@
     modal.hide();
 	acceptBtn.disabled = true;
   });
+  */
 
   // When Accept is clicked
   acceptBtn.addEventListener("click", function() {
