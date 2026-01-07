@@ -10,6 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 	</head>
 	<body class="is-preload">
 
@@ -21,7 +24,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/kay_logo_1.png" alt="" /></span>
-							<h1 id="title">Your Name</h1>
+							<h1 id="title">Karyn Kennedy</h1>
 							<p>Body Treatment Expert</p>
 						</div>
 
@@ -30,8 +33,10 @@
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Services</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">Book Appointment</span></a></li>
+								<li><a href="#benefits" id="benefits-link"><span class="icon solid fa-book">Benefits</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<li><a href="#location" id="location-link"><span class="icon solid fa-map-marker-alt">Location</span></a></li>
 							</ul>
 						</nav>
 
@@ -41,11 +46,11 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+							<li><a href="https://www.facebook.com/kay.spa.2025" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+							<!--<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
 							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
 						</ul>
 
 				</div>
@@ -62,10 +67,50 @@
 							<header>
 								<h2 class="alt">✨Welcome to <strong style="font-weight: bold;">Kay Beauty Spa</strong></h2>
 								<p style="text-align: left;">Indulge in the ultimate beauty and wellness experience. At <strong style="font-weight: bold;">Kay Beauty Spa</strong>, we specialize in enhancing your natural radiance through expert skincare, rejuvenating facials, body treatments, and precision waxing. Our mission is to provide a relaxing, professional environment where your beauty and confidence flourish.</p>
+								<h2 style="text-align: center;font-weight: bold;">CONTACT KAY BEAUTY SPA FOR PACKAGE DEALS.</h2>
+								
 							</header>
 
 							<footer>
+								<!-- Start Square Appointments Embed code -->
+								<!-- Button to Open Modal -->
+								<button type="button" style="
+								background-color: #e413e4;
+								border: none;
+								color: white;
+								height: 40px;
+								text-transform: uppercase;
+								font-family: Comic Sans MS, Comic Sans, Chalkboard, ChalkboardSE-Regular, sans-serif;
+								letter-spacing: 1px;
+								line-height: 38px;
+								padding: 0 28px;
+								border-radius: 32px;
+								font-weight: 500;
+								font-size: 14px;
+								cursor: pointer;
+								display: inline-block; class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#termsModal">
+								  Book Now
+								</button>
 								
+								<a type="button" style="
+								background-color: #e413e4;
+								border: none;
+								color: white;
+								height: 40px;
+								text-transform: uppercase;
+								font-family: Comic Sans MS, Comic Sans, Chalkboard, ChalkboardSE-Regular, sans-serif;
+								letter-spacing: 1px;
+								line-height: 38px;
+								padding: 0 28px;
+								border-radius: 32px;
+								font-weight: 500;
+								font-size: 14px;
+								cursor: pointer;
+								display: inline-block; text-decoration:none" href="#products">
+								  Discover Products
+								</a>
+								
+								<!-- End Square Appointments Embed code -->
 							</footer>
 
 						</div>
@@ -76,254 +121,699 @@
 						<div class="container">
 
 							<header>
-								<h2>Services</h2>
+								<h2 class="fas fa-leaf"> Services</h2>
 							</header>
 
-							<p style="color:black;text-align: left;">At <strong style="font-weight: bold;">Kay Beauty Spa</strong>, we specialize in transforming your everyday stress into pure serenity. Our expert professionals offer a wide range of luxurious services tailored to pamper you from head to toe, including:</p>
+							<p class="para" >At <strong style="font-weight: bold;">Kay Beauty Spa</strong>, we specialize in transforming your everyday stress into pure serenity. Our expert professionals offer a wide range of luxurious services tailored to pamper you from head to toe, including:</p>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/post-op.jpeg" alt="" /></a>
+										<a  class="image fit"><img src="images/post-op-1.jpeg" alt="" /></a>
 										<header>
-											<h3>1 Post Op Massage <span class="right-text">45 min - $110</span></h3>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">1 Newly Post Op Care / No Drain</div>
+													<div class="table-cell right-text">1 hr - $100</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">1 Post Op Care / Drain, Fluid</div>
+													<div class="table-cell right-text">1 hr - $120</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">1 Post Op Full Body</div>
+													<div class="table-cell right-text">1 hr 20 mins - $160</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">1 Post Op / Body Contour</div>
+													<div class="table-cell right-text">1 hr - $120</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">1 Post Op Maintenance</div>
+													<div class="table-cell right-text">1 hr - $100</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">1 Post Op Maintenance / Body Contour</div>
+													<div class="table-cell right-text">1 hr - $120</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">1 Post Op Massage & Tape</div>
+													<div class="table-cell right-text">1 hr - $140</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Tape Method</div>
+													<div class="table-cell right-text">30 mins - $65</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Tape Removal</div>
+													<div class="table-cell right-text">40 mins - $50</div>
+												</div>
+												
+											</div>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/lymph-buccal.jpeg" alt="" /></a>
+										<a  class="image fit"><img src="images/kay-beauty-spa-foot.jpeg" alt="" /></a>
 										<header>
-											<h3>Lymphatic Buccal Facial(1hr)<span class="right-text">1 hr - $150</span></h3>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Foot Massage</div>
+													<div class="table-cell right-text">20 mins - $30</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Foot Massage from Feet to Knee</div>
+													<div class="table-cell right-text">30 mins - $45</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Swollen Foot Massage from Feet to Groin</div>
+													<div class="table-cell right-text">40 mins - $60</div>
+												</div>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/laser-lipo.jpeg" alt="" /></a>
+										<a  class="image fit"><img src="images/kay-beauty-spa-ultra-sound.jpg" alt="" /></a>
 										<header>
-											<h3>Laser lipo or Radio Frequency<span class="right-text">30 min - $100</span></h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/glow-facial-buccal.jpeg " alt="" /></a>
-										<header>
-											<h3>Glow Facial with Buccal Massage<span class="right-text">1 hr 30 min - $175</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/foot_massage.jpg" alt="" /></a>
-										<header>
-											<h3>1 Post Op Deluxe<span class="right-text">45 min - $135</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/head-spa-dermaplane.jpg" alt="" /></a>
-										<header>
-											<h3>Head Spa with Dermaplane Facial<span class="right-text">1 hr 30 min - $175</span></h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/head-spa-facial.jpg" alt="" /></a>
-										<header>
-											<h3>Head Spa with Mini Facial<span class="right-text">1 hr 15 min - $155</span></h3>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Ultra Sound Cavitation</div>
+													<div class="table-cell right-text">30 mins - $85</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Ultra Sound Cavitation / Body Contour</div>
+													<div class="table-cell right-text">1 hr - $130</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Laser Lipo Treatment</div>
+													<div class="table-cell right-text">30 mins - $80</div>
+												</div>
+											</div>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/head-spa.jpeg" alt="" /></a>
+										<a  class="image fit"><img src="images/head-spa-facial-1.jpg" alt="" /></a>
 										<header>
-											<h3>Head Spa<span class="right-text">1 hr - $125</span></h3>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Head Spa</div>
+													<div class="table-cell right-text">1 hr - $85</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Head Spa / Scalp Treatment</div>
+													<div class="table-cell right-text">1 hr 10 mins - $100</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Head Spa with Mini Facial</div>
+													<div class="table-cell right-text">1 hr 20 mins - $140</div>
+												</div>
+												
+										
+											</div>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/butt-cell.jpeg" alt="" /></a>
+										<a  class="image fit"><img src="images/combo-facial.jpeg" alt="" /></a>
 										<header>
-											<h3>Butt Enhance w Cellulite Treatment<span class="right-text">1 hr - $125</span></h3>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Hydro Dermabration</div>
+													<div class="table-cell right-text">1 hr - $150</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Micro Dermabration</div>
+													<div class="table-cell right-text">1 hr - $150</div>
+												</div>
+											</div>
 										</header>
 									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/wood-therapy.jpg" alt="" /></a>
+										<a  class="image fit"><img src="images/facial-2.jpg" alt="" /></a>
 										<header>
-											<h3>Wood Therapy Treatment<span class="right-text">30 min - $100</span></h3>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Chemical Peel</div>
+													<div class="table-cell right-text">45 mins - $180</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Acne Facial</div>
+													<div class="table-cell right-text">1 hr - $100</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Extraction Facial</div>
+													<div class="table-cell right-text">1 hr 20 mins - $150</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Teen Facial</div>
+													<div class="table-cell right-text">50 mins - $65</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Kay Signature Facial</div>
+													<div class="table-cell right-text">1 hr 20 mins - $120</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Men's Cleansing Facial</div>
+													<div class="table-cell right-text">30 mins - $75</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Men's Deep Cleansing Facial</div>
+													<div class="table-cell right-text">1 hr - $120</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Back Facial</div>
+													<div class="table-cell right-text">1 hr - $100</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Back Facial, Exfoliation with Extraction </div>
+													<div class="table-cell right-text">1 hr 15 mins - $120</div>
+												</div>
+												
+											</div>
 										</header>
 									</article>
+									<!--
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/Non-surgical-2.png" alt="" /></a>
+										<a  class="image fit"><img src="images/Chemical-Peel.jpg" alt="" /></a>
 										<header>
-											<h3>Non Surgical Butt lift<span class="right-text">30 min - $100</span></h3>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Chemical Peel</div>
+													<div class="table-cell right-text">45 mins - $180</div>
+												</div>
+																					
+											</div>
 										</header>
 									</article>
+									-->
 									
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/endermo-therapy.jpg" alt="" /></a>
-										<header>
-											<h3>Endermo Therapy<span class="right-text">30 min - $100</span></h3>
-										</header>
-									</article>
 									
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/post-op-tape.jpeg" alt="" /></a>
-										<header>
-											<h3>1 Post Op Massage & Tape<span class="right-text">1 hr - $150</span></h3>
-										</header>
-									</article>
 									
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/firbosis.jpeg" alt="" /></a>
-										<header>
-											<h3>Fibrosis Treatment<span class="right-text">30 min - $150</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/post-op.jpeg" alt="" /></a>
-										<header>
-											<h3>1 Post Op Deluxe & Tape<span class="right-text">1 hr - $150</span></h3>
-										</header>
-									</article>
-									
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/gold-facial.jpeg" alt="" /></a>
-										<header>
-											<h3>Gold Facial<span class="right-text">1 hr 15 min - $150</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/facial-mens.jpg" alt="" /></a>
-										<header>
-											<h3>Men's Facial<span class="right-text">1 hr - $125</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/all-in-one-facial.png" alt="" /></a>
-										<header>
-											<h3>All in one Facial<span class="right-text">1 hr 30 min - $200</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/Chemical-Peel.jpg" alt="" /></a>
-										<header>
-											<h3>Chemical Peel<span class="right-text">30 min - $250</span></h3>
-										</header>
-									</article>
-																	
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/sauna-wrap.jpg" alt="" /></a>
-										<header>
-											<h3>Suana Wrap<span class="right-text">45 min - $90</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/back-facial.jpeg" alt="" /></a>
-										<header>
-											<h3>Back Facial<span class="right-text">1 hr - $130</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/signature-facial.jpeg" alt="" /></a>
-										<header>
-											<h3>Signature Classic Basic Facial<span class="right-text">1 hr - $100</span></h3>
-										</header>
-									</article>
-									
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/teen-facial.jpg" alt="" /></a>
-										<header>
-											<h3>Teen Facial<span class="right-text">45 min - $90</span></h3>
-										</header>
-									</article>
-									
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/dermaplaning-facial.jpeg" alt="" /></a>
-										<header>
-											<h3>Dermaplaning Facial<span class="right-text">1 hr 15 min - $125</span></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/acne-facial.jpg" alt="" /></a>
-										<header>
-											<h3>Acne Facial<span class="right-text">1 hr - $150</span></h3>
-										</header>
-									</article>
-									
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/diamond-facial.jpg" alt="" /></a>
-										<header>
-											<h3>Diamond Dermabrasion Facial<span class="right-text">1 hr - $150</span></h3>
-										</header>
-									</article>
-																	
 								</div>
 								
+								<div class="col-4 col-12-mobile">
+									
+									<!--
+									<article class="item">
+										<a  class="image fit"><img src="images/glow-facial-buccal.jpeg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Glow Facial with Buccal Massage</div>
+													<div class="table-cell right-text">1 hr 30 min - $175</div>
+												</div>
+											</div>
+										</header>
+									</article>
+									-->
+									
+									<article class="item">
+										<a  class="image fit"><img src="images/wood-butt-lift-treatment.jpg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												
+												<div class="table-row">
+													<div class="table-cell title">Wood Therapy Treatment</div>
+													<div class="table-cell right-text">30 mins - $100</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Non Surgical Butt Lift</div>
+													<div class="table-cell right-text">40 mins - $85</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Butt Enhance w Cellulite Treatment</div>
+													<div class="table-cell right-text">1 hr - $120</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Butt Enhance w Wood Therapy Treatment to the thigh</div>
+													<div class="table-cell right-text">1 hr - $120</div>
+												</div>
+											</div>
+										</header>
+									</article>
+									
+									<article class="item">
+										<a  class="image fit"><img src="images/firbosis.jpeg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Fibrosis Treatment</div>
+													<div class="table-cell right-text">30 min - $85</div>
+												</div>
+											</div>
+										</header>
+									</article>
+									<article class="item">
+										<a  class="image fit"><img src="images/sauna-wrap.jpg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Sauna Wrap Blanket</div>
+													<div class="table-cell right-text">45 mins - $120</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Sauna Wrap / Post Op Maintenance</div>
+													<div class="table-cell right-text">1 hr - $120</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Sauna Wrap</div>
+													<div class="table-cell right-text">20 mins - $55</div>
+												</div>
+												
+											</div>
+										</header>
+									</article>
+									
+									
+								</div>
 								
-							
+								<div class="col-4 col-12-mobile">
+									<!--
+									<article class="item">
+										<a  class="image fit"><img src="images/facial-2.jpg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												
+																					
+											
+											</div>
+										</header>
+									</article>
+									
+									<article class="item">
+										<a  class="image fit"><img src="images/butt-cell.jpeg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Non Surgical Butt Lift</div>
+													<div class="table-cell right-text">40 mins - $85</div>
+												</div>
+												<div class="table-row">
+													<div class="table-cell title">Butt Enhance w Cellulite Treatment</div>
+													<div class="table-cell right-text">1 hr - $120</div>
+												</div>
+											</div>
+										</header>
+									</article>
+									-->
+									<article class="item">
+										<a  class="image fit"><img src="images/endermo-therapy.jpg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Endermo Therapy</div>
+													<div class="table-cell right-text">30 min - $85</div>
+												</div>
+												
+											</div>
+										</header>
+									</article>
+									
+									<article class="item">
+										<a  class="image fit"><img src="images/waxing.jpeg" alt="" /></a>
+										<header>
+											<div class="table-row">
+												<div class="table-cell title">Vagacial [Skincare treatment for Vulvar Bikini area]</div>
+												<div class="table-cell right-text">$75</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Bikini Full (V)</div>
+												<div class="table-cell right-text">$25</div>
+											</div>
+											
+											<div class="table-row">
+												<div class="table-cell title">Brazilian (V) [Bikini Line, Butt Strip]</div>
+												<div class="table-cell right-text">$45</div>
+											</div>
+																				
+											<div class="table-row">
+												<div class="table-cell title">Chin</div>
+												<div class="table-cell right-text">$10</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Full Back</div>
+												<div class="table-cell right-text">$45</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Full Arm [Hands and Fingers]</div>
+												<div class="table-cell right-text">$30</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Half Arm [Upper Arm, Elbow]</div>
+												<div class="table-cell right-text">$25</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Full Leg [Not Bikini Line]</div>
+												<div class="table-cell right-text">$55</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Lower Leg [Knees, Feet, Toes]</div>
+												<div class="table-cell right-text">$30</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Upper Leg [Knees, Inner Thighs, Not Bikini Line]</div>
+												<div class="table-cell right-text">$30</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Nose [Inside Nostrils]</div>
+												<div class="table-cell right-text">$10</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Under Arm</div>
+												<div class="table-cell right-text">$18</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Under Arm [Including Lower Arm]</div>
+												<div class="table-cell right-text">$30</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Upper Lip [Not Lower Lip]</div>
+												<div class="table-cell right-text">$10</div>
+											</div>
+											<div class="table-row">
+												<div class="table-cell title">Upper Lip [Including Lower Lip]</div>
+												<div class="table-cell right-text">$15</div>
+											</div>
+												
+											</div>
+										</header>
+									</article>
+									
+								</div>						
 						</div>
 					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
+					
+				<!-- Products -->
+					<section id="products" class="two">
 						<div class="container">
 
 							<header>
-								<h2>Book Appointment</h2>
+								<h2 class="fas fa-spa"> Products</h2>
 							</header>
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a  class="image fit"><img src="images/faza-5.jpeg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Discover the power of Faja body contouring garments, now available at Kay Beauty Spa.</div>
+													
+												</div>
+											</div>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a  class="image fit"><img src="images/oils.jpg" alt="" /></a>
+										<header>
+											<div class="table-like">
+												<div class="table-row">
+													<div class="table-cell title">Kay Beauty Spa Massage oil helps relax your body, feet and muscles, soothe inflammation and reduce strain or pain.</div>
+													
+												</div>
+											</div>
+										</header>
+									</article>
+									
+								</div>
+							</div>
+						</div>
+					</section>
 
+				<!-- Benefits -->
+					<section id="benefits" class="three">
+						<div class="container">
+
+							<header>
+								<h2 class="fas fa-spa"> Benefits</h2>
+							</header>
+							<div class="para">
+								<p>
+									
+									<strong style="font-weight: bold;">Post Op Care Package : </strong>
+									<p>
+										A comprehensive suite of post-operative services tailored for recovery and body contouring. Includes gentle care for recent post-op patients (with or without drains), full-body care, and ongoing maintenance to promote healing, comfort, and skin health. Incorporates therapeutic massage and taping to reduce swelling, enhance body contouring, and sustain post-operative results.
+									</p>
+								</p>
+								<p>
+									<strong style="font-weight: bold;">Butt Lift and Enhance : </strong>
+									<p> A non-invasive treatment to lift, tone, and enhance the buttocks, using specialized techniques to sculpt the area while reducing cellulite and improving skin texture for a smoother, more defined look.</p>
+								</p>
+								<p>
+									<strong style="font-weight: bold;">Sauna Wrap : </strong>
+									<p> A full-body heated wrap treatment to promote sweating, detoxification, and skin rejuvenation, with specialized post-operative applications to enhance recovery and maintain results.</p>
+								</p>
+								<p>
+									<strong style="font-weight: bold;">Facial Treatments Package : </strong>
+									<p> A comprehensive range of facial treatments tailored to diverse skin needs. Includes specialized facials like the Acne Facial to target acne-prone skin with cleansing and calming techniques, the Extraction Facial for deep cleansing with manual blackhead removal, and the Teen Facial designed for young skin to address oiliness and acne. The Kay Signature Facial offers a customized luxury experience, while Men's Cleansing and Deep Cleansing Facials focus on refreshing and intensive care for male skin. The Back Facial treats acne and oiliness on the back, and the Head Spa with Mini Facial combines scalp rejuvenation with facial care. Advanced exfoliation options like Chemical Peel, Hydro Dermabrasion, and Micro Dermabrasion improve skin texture, tone, and hydration for a radiant complexion.</p>
+								</p>
+								<p>
+									<strong style="font-weight: bold;">Waxing Services Package : </strong>
+									<p>A complete range of waxing treatments designed for smooth, hair-free skin across various body areas. Includes Brazilian (V) [Bikini Line, Butt Strip] and Bikini Full (V) for thorough hair removal in the bikini area, alongside Full Arm [Hands and Fingers] and Half Arm [Upper Arm, Elbow] for polished arm skin. Full Leg [Not Bikini Line], Lower Leg [Knees, Feet, Toes], and Upper Leg [Knees, Inner Thighs, Not Bikini Line] provide comprehensive leg waxing options. Facial waxing covers Chin, Upper Lip [Not Lower Lip], and Upper Lip [Including Lower Lip] for precise hair removal, while Full Back and Under Arm [Including Lower Arm or Under Arm only] target larger areas. Nose [Inside Nostrils] waxing ensures a clean, refined look.</p>
+								</p>
+ 								
+								
+							</div>
 							<!-- Start Square Appointments Embed Code  <iframe src="https://app.squareup.com/appointments/buyer/widget/8h6pglpwwv72lz/LTDE7JJ13N9JM" allow="payment app.squareup.com" style="min-height: 1500px; width: 100%; height: 100%; border: none;"></iframe><!-- End Square Appointments Embed Code --> 
 
 						</div>
 					</section>
+
+
+
+
+				<!-- About Me -->
+					<section id="about" class="two">
+						<div class="container">
+
+							<header>
+								<h2 class="fas fa-hand-holding-heart"> About Kay Beauty Spa</h2>
+							</header>
+						<div class="para">	
+							<p>
+								At <strong style="font-weight: bold;" >Kay Beauty Spa</strong>, we believe that beauty is more than just appearance — 
+								<em>it's how you feel inside and out</em>. We offer a luxurious yet welcoming space where self-care meets advanced treatments and real results.
+							</p>
+							
+							<p>
+								From <strong style="font-weight: bold;">rejuvenating facials</strong> and <strong style="font-weight: bold;">soothing massages</strong> to 
+								<strong style="font-weight: bold;">body contouring services</strong> and premium shapewear like 
+								<strong style="font-weight: bold;" >Fazas garments</strong>, every service is thoughtfully designed to help 
+								you look and feel your best.
+							</p>
+							
+							<p>
+								<strong style="font-weight: bold;">Our Mission:</strong> To empower you with confidence through personalized beauty and 
+								wellness experiences that deliver <em>real, lasting results</em>.
+							</p>
+							
+							<p>
+								<strong style="font-weight: bold;">Why Choose Kay Beauty Spa?</strong><br>
+								✔️ Licensed, experienced professionals<br>
+								✔️ Customized treatments for all skin and body types<br>
+								✔️ Clean, calming, and professional environment<br>
+								✔️ Exclusive post-treatment products like <strong>Fazas bodywear</strong> to enhance your results
+							</p>
+							
+							<p>
+								Whether you're here for <em>relaxation or transformation</em>, 
+								<strong style="font-weight: bold;">Kay Beauty Spa</strong> is your trusted partner on your beauty journey.
+							</p>
+						</div>
+							<!-- Start Square Appointments Embed Code  <iframe src="https://app.squareup.com/appointments/buyer/widget/8h6pglpwwv72lz/LTDE7JJ13N9JM" allow="payment app.squareup.com" style="min-height: 1500px; width: 100%; height: 100%; border: none;"></iframe><!-- End Square Appointments Embed Code --> 
+
+						</div>
+					</section>
+					
+					
+					
 
 				<!-- Contact -->
 					<section id="contact" class="four">
 						<div class="container">
 
 							<header>
-								<h2>Contact</h2>
+								<h2 class="fas fa-address-book"> Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<section id="contact" style="max-width: 800px; margin: auto; padding: 1px; font-family: 'Segoe UI', sans-serif;margin-top: 0;margin-bottom: 1px;">
+								
+								<p style="margin-bottom: 1px;"><strong style="font-weight: bold;">Kay Beauty Spa LLC</strong></p>
+								<p style="margin-bottom: 1px;font-weight: bold;">4133 Whitney Ave Suite 3D, Hamden, CT</p>
+								
+								<p style="margin-bottom: 1px;"><strong style="font-weight: bold;">Phone:</strong> <a href="tel:+12038080464"style="font-weight: bold;">(203) 808-0464</a></p>
+								
+								<p style="margin-bottom: 1px;color:black">We're here to help you book an appointment or answer any questions you may have.</p>
+							</section>
 
-							<form method="post" action="#">
+							<form method="post" id="contactForm" action="https://send-email.anil-prathipati15.workers.dev/sendEmail">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" />
+									<span id="name-span" style="color:red;font-weight: bold;font-size: 0.875rem;"></span></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" />
+									<span id="email-span" style="color:red;font-weight: bold;font-size: 0.875rem;" ></span></div>
 									<div class="col-12">
 										<textarea name="message" placeholder="Message"></textarea>
+										<span id="message-span" style="color:red;font-weight: bold;font-size: 0.875rem;" ></span>
 									</div>
+									<!-- Cloudflare Turnstile Widget -->
+								<div class="col-12" style="margin-bottom: 15px;">
+									<div class="cf-turnstile" 
+										 data-sitekey="0x4AAAAAACK-PkxdxqoifOWc"
+										 data-callback="onTurnstileSuccess"
+										 data-expired-callback="onTurnstileExpired"
+										 data-theme="light"></div>
 									<div class="col-12">
 										<input type="submit" value="Send Message" />
 									</div>
 								</div>
 							</form>
+							
+						</div>
+					</section>
+					
+					<!-- Location -->
+					<section id="location" class="two">
+						<div class="container">
+							  <header>
+								<h2 class="fas fa-map-marker-alt"> Location</h2>
+							</header>
+							
+							  
+							  <div class="map-container">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.8452446416686!2d-72.91230192407869!3d41.442579471292866!2m3!1
+							f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7c5f5e656b629%3A0x20af1f676b50309a!2sKay%20Beauty%20Spa%20LLC!5e0!3m2!1sen!2sus!4v1
+							756134159117!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</iframe>
+							  </div>
+
+							<div class="review-button-container">
+								<a href="https://www.google.com/maps/place/Kay+Beauty+Spa+LLC/@41.4425795,-72.909727,14z/data=!3m1!4b1!4m6!3m5!1s0x89e7c5f5e656b629:0x20af1f676b50309a!8m2!3d41.4425795!4d-72.909727!16s%2Fg%2F11xgy4vmdp?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="review-button">
+								  <i class="fas fa-star review-icon"></i> Write a Google Review
+								</a>
+								<div class="review-text">Share your experience with Kay Beauty Spa!</div>
+							</div>
+							
 
 						</div>
 					</section>
 
 			</div>
 
+			</div>
+			
+			
 		<!-- Footer -->
 			<div id="footer">
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: Anil Prathipati</li>
+						<strong style="font-weight: bold;">
+						<li>&copy; 2025 Kay Beauty Spa. All rights reserved.</li><br>
+						<li>Developed by: <a href="https://hyndavisolutions.com" target="_blank">Hyndavi Solutions</a></li>
+						<li>Contact: <a href="tel:+18609378490">860.937.8490</a></li>
+						</strong>
 					</ul>
 
 			</div>
+			
+			<!-- Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+        <button type="button" id="closeIcon" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="termsContent" style="max-height: 300px; overflow-y: auto;">
+        <h6>Thank you for choosing our services. Please review the following terms and conditions to ensure a smooth and pleasant experience.</h6>
+        
+        <h6 class="mt-3">Appointment Policies</h6>
+        <ul>
+          <li><b>Punctuality:</b> Please arrive on time for your appointment. Late arrivals may result in a shortened service to accommodate other clients, but you will still receive the service whenever possible.</li>
+          <li><b>Arrival Time:</b> Kindly arrive at your scheduled appointment time. Early arrivals cannot be accommodated due to scheduling constraints.</li>
+        </ul>
+
+        <h6 class="mt-3">Booking and Rescheduling</h6>
+        <ul>
+          <li><b>Deposit Requirement:</b> A $40 non-refundable deposit is required for all services at the time of booking. The remaining balance is due upon completion of the service. For all services less than $40, payment must be made in full at the time of booking.</li>
+          <li><b>Rescheduling:</b> We allow one reschedule per appointment. Please confirm your availability before booking to avoid conflicts.</li>
+          <li><b>Location Confirmation:</b> Ensure the selected location is correct when booking your appointment.</li>
+          <li><b>Same-Day Cancellations:</b> Cancelling on the day of your appointment will result in the forfeiture of your non-refundable deposit.</li>
+          <li><b>No-Show Policy:</b> Clients who fail to attend their appointment without prior notification will be unable to book future appointments.</li>
+        </ul>
+
+        <h6 class="mt-3">Payment</h6>
+        <ul>
+          <li><b>Cash Payments:</b> If paying with cash, please provide the exact amount, as we do not carry cash for change.</li>
+          <li><b>Balance Due:</b> The remaining balance for services must be paid in full upon completion.</li>
+        </ul>
+
+        <h6 class="mt-3">Health and Safety</h6>
+        <ul>
+          <li><b>Mask Requirement:</b> All clients are required to wear a mask during their appointment to ensure everyone’s safety.</li>
+          <li><b>No Extra Guests:</b> To maintain a safe and comfortable environment, please attend your appointment alone. Additional guests are not permitted.</li>
+        </ul>
+
+        <p class="mt-3">We appreciate your cooperation and understanding. If you have any questions or need assistance, please contact us before your appointment. We look forward to serving you!</p>
+      </div>
+      <div class="modal-footer">
+		<span style="font-weight: bold;font-size:0.6em;color:red;"> Please review all terms to Accept.</span>
+        <button type="button" id="declineBtn" class="btn btn-secondary" data-bs-dismiss="modal">Decline</button>
+        <button type="button" id="acceptBtn" class="btn btn-success" >Accept</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Confirmation alert (hidden by default) 
+<div id="confirmation" class="alert alert-success mt-3 d-none" role="alert">
+  ✅ Thank you! You have accepted the terms and conditions.
+</div>
+-->
+<!-- Bootstrap 5 JS (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const termsContent = document.getElementById("termsContent");
+  const acceptBtn = document.getElementById("acceptBtn");
+  //const confirmation = document.getElementById("confirmation");
+
+  /* Enable Accept button only after scroll to bottom
+  termsContent.addEventListener("scroll", function() {
+    if (termsContent.scrollTop + termsContent.clientHeight >= termsContent.scrollHeight) {
+      acceptBtn.disabled = false;
+    }
+  });
+  
+  declineBtn.addEventListener("click", function() {
+    const modal = bootstrap.Modal.getInstance(document.getElementById("termsModal"));
+    modal.hide();
+	acceptBtn.disabled = true;
+  });
+  
+  closeIcon.addEventListener("click", function() {
+    const modal = bootstrap.Modal.getInstance(document.getElementById("termsModal"));
+    modal.hide();
+	acceptBtn.disabled = true;
+  });
+  */
+
+  // When Accept is clicked
+  acceptBtn.addEventListener("click", function() {
+    const modal = bootstrap.Modal.getInstance(document.getElementById("termsModal"));
+    modal.hide();
+	acceptBtn.disabled = true;
+   // confirmation.classList.remove("d-none");
+	window.open('https://app.squareup.com/appointments/book/8h6pglpwwv72lz/LTDE7JJ13N9JM/start', '_blank');
+    /* Auto-hide confirmation after 5 seconds
+    setTimeout(() => {
+      confirmation.classList.add("d-none");
+    }, 5000);
+	*/
+  });
+</script>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -333,6 +823,84 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+				
+				// Turnstile callback functions
+				let turnstileToken = null;
+
+				function onTurnstileSuccess(token) {
+					turnstileToken = token;
+					document.getElementById("turnstile-span").textContent = "";
+				}
+
+				function onTurnstileExpired() {
+					turnstileToken = null;
+				}
+				
+				document.getElementById("contactForm").addEventListener("submit", async (e) => {
+				  e.preventDefault();
+				  // List all error span IDs
+					const spanIds = ["name-span", "email-span", "message-span"];
+
+					// Clear them dynamically
+					spanIds.forEach(id => {
+						document.getElementById(id).textContent = "";
+					});
+				  const form = e.target;
+				  const formData = new FormData(form);
+				  const data = Object.fromEntries(formData);
+
+				  try {
+					const result = await fetch(form.action, {
+					  method: "POST",
+					  headers: { "Content-Type": "application/json" },
+					  body: JSON.stringify(data)
+					});
+					console.log(result);
+					if (!result.ok) {
+					  // Extract errors
+					  const jsonErrors = await result.json();
+					  
+					  
+						console.log(jsonErrors.errors);
+					  /* Log or display errors
+					  jsonErrors.errors.forEach(error => {
+						console.log(`Field: ${error.field}, Error: ${error.message}`);
+					  });
+						*/
+					  // Example: Display errors in the UI
+					  jsonErrors.errors.forEach(error => {
+						const errorElement = document.getElementById(`${error.field}-span`);
+						document.getElementById(`${error.field}-span`)
+						console.log(errorElement);
+						if (errorElement) {
+						  errorElement.textContent = error.message;
+						}
+					  });
+						
+					  return errorMessages; // Return for further processing if needed
+					}
+									
+					alert("Thank you for your message. One of our Representative will be in contact with you shortly");
+					
+					form.reset();
+					
+					// Reset Turnstile widget after successful submission
+					if (typeof turnstile !== 'undefined') {
+					  turnstile.reset();
+					}
+					turnstileToken = null;
+					
+				  } catch (err) {
+					alert("Failed to send message. Sorry for inconvenience.");
+					// Reset Turnstile widget on error
+					if (typeof turnstile !== 'undefined') {
+					  turnstile.reset();
+					}
+				  }
+				});
+			</script>
 
 	</body>
 </html>
